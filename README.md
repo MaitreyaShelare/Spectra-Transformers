@@ -24,7 +24,9 @@ The training data is augmented using techniques like jitter, crop, horizontal an
 
 #### SWIN Transformer Model
 
-The SWIN transformer,which is pre-trained on ImageNet Dataset, is used as the base model. SWIN Transformer serves as a general-purpose backbone for computer vision. It is basically a hierarchical Transformer whose representation is computed with shifted windows. The shifted windowing scheme brings greater efficiency by limiting self-attention computation to non-overlapping local windows while also allowing for cross-window connection. By using this model, computation complexity is reduced to O($mn$) instead of the expensive O($n^2$) for vanilla Vision Transformer, for sufficiently small window size.
+The SWIN Transformer,which is pretrained on the ImageNet Dataset, is used as the base classification model. The SWIN Transformer serves as a versatile backbone for computer vision applications. This transformative architecture operates as a hierarchical Transformer, and its distinctive feature involves the computation of representations with the utilization of shifted windows. 
+
+This windowing scheme enhances computational efficiency by restricting self-attention calculations to non-overlapping local windows. Simultaneously, it facilitates cross-window connections, yielding substantial gains in terms of both speed and memory usage. By adopting this model, we achieve a significant reduction in computational complexity, scaling from the expensive O($n^2$) of a traditional Vision Transformer to a much more manageable O($mn$), for reasonably small window size ($m$).
 
 <p align="center">
 	<img src="https://github.com/MaitreyaShelare/Spectra-Transformers-SIH-2023/blob/main/assets/SWIN%20Attention.gif">
