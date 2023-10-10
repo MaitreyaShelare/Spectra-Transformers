@@ -40,7 +40,7 @@ The model is compiled with the AdamW optimizer and label smoothing cross-entropy
 #### Training History
 
 <p align="center">
-	<img src="https://github.com/MaitreyaShelare/Spectra-Transformers-SIH-2023/blob/main/assets/SWIN%20Attention.gif">
+	<img src="https://github.com/MaitreyaShelare/Spectra-Transformers-SIH-2023/blob/main/assets/model%20training%20history.png">
 </p>
 
 ### Training Results
