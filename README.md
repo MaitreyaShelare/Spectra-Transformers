@@ -104,7 +104,7 @@ This is the architecture of the proposed dual branch swin transformer.
 This is the block diagram of the Hyperspectral branch, which uses spectral-spatial joint feature extraction method and adaptive clustering feature selection algorithm.
 
 <p align="center">
-	<img src="https://github.com/MaitreyaShelare/Spectra-Transformers-SIH-2023/blob/main/assets/HSI%20Branch.png" width="700>
+	<img src="https://github.com/MaitreyaShelare/Spectra-Transformers-SIH-2023/blob/main/assets/HSI%20Branch.png" width="700">
 </p>
 
 
