@@ -1,10 +1,7 @@
-# EarthFinesse: Military Terrain Classifier
+# Multimodal Dual-Swin Transformer with Spectral-Spatial Feature Extraction for Terrain Recognition
 
-[![GitHub stars](https://img.shields.io/github/stars/PiPlusTheta/EarthFinesse)](https://github.com/PiPlusTheta/EarthFinesse/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/PiPlusTheta/EarthFinesse)](https://github.com/PiPlusTheta/EarthFinesse/network/members)
-[![GitHub license](https://img.shields.io/github/license/PiPlusTheta/EarthFinesse)](https://github.com/PiPlusTheta/EarthFinesse/blob/main/LICENSE)
 
-EarthFinesse is a high-accuracy military terrain classifier powered by deep learning. It classifies terrain types such as Grassy, Marshy, Rocky, and Sandy with an accuracy of over 97.87%, setting a new benchmark in this domain. The model uses the MobileNetV2 architecture, optimized for efficient and accurate terrain classification.
+We propose a dual branch swin transformer based approach, which would be capable of accepting RGB and Hyperspectral Images as input. EarthFinesse is a high-accuracy military terrain classifier powered by deep learning. It classifies terrain types such as Grassy, Marshy, Rocky, and Sandy with an accuracy of over 97.87%, setting a new benchmark in this domain. The model uses the MobileNetV2 architecture, optimized for efficient and accurate terrain classification.
 
 ## Table of Contents
 
@@ -17,63 +14,7 @@ EarthFinesse is a high-accuracy military terrain classifier powered by deep lear
 - [Contributing](#contributing)
 - [License](#license)
 
-## Installation
 
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/PiPlusTheta/EarthFinesse.git
-   cd EarthFinesse
-	```
-2. Install the required Python packages:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-## Usage
-
-### Streamlit User Interface
-![WhatsApp Image 2023-09-13 at 23 50 32](https://github.com/PiPlusTheta/EarthFinesse/assets/68808227/ca6f9098-4112-476f-b896-090410e9c439)
-
-EarthFinesse comes with a user-friendly Streamlit interface for bulk image classification. Run the following command to start the application:
-
-```bash
-streamlit run app.py
-```
-
-Upload reconnaissance images, and the model will classify them into terrain types with confidence scores.
-
-### Model Inference
-
-To perform individual image classification using the trained model, use the following code snippet:
-
-```python
-# Load the model
-from tensorflow.keras.models import load_model
-
-model = load_model('terrain__2023_09_13__11_52_06___Accuracy_0.9787.h5')
-
-# Load and preprocess the image
-from tensorflow.keras.preprocessing import image
-from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
-import numpy as np
-
-img_path = 'path_to_image.jpg'
-img = image.load_img(img_path, target_size=(224, 224))
-img = image.img_to_array(img)
-img = preprocess_input(img)
-img = np.expand_dims(img, axis=0)
-
-# Perform inference
-prediction = model.predict(img)
-label_index = np.argmax(prediction)
-terrain_label = {0: 'Grassy', 1: 'Marshy', 2: 'Rocky', 3: 'Sandy'}[label_index]
-confidence = prediction[0, label_index]
-
-print(f"Predicted Terrain: {terrain_label}")
-print(f"Confidence: {confidence * 100:.2f}%")
-```
 
 ## Model Training
 
@@ -171,48 +112,21 @@ These training metrics illustrate the model's progression over the training epoc
 
 ## Applications
 
-The EarthFinesse Military Terrain Classifier has versatile applications across various domains, including but not limited to:
 
-#### 1. Military Operations
+#### 1. Defence
 
-   - **Tactical Planning:** The classifier assists military strategists in understanding the terrain composition, helping them plan tactical maneuvers effectively.
+   - **Tactical Planning:** 
    
-   - **Mission Customization:** Military missions can be customized based on the terrain type, optimizing resource allocation and troop deployment.
+   - **Vehicle and Equipment Deployment.:** 
    
-   - **Camouflage Strategies:** Knowledge of terrain types aids in developing appropriate camouflage strategies to blend in with the surroundings.
    
 #### 2. Environmental Monitoring
 
-   - **Conservation Efforts:** Conservationists can utilize the classifier to monitor and protect specific ecosystems, such as marshlands and forests.
+   - **Conservation Efforts:** 
    
-   - **Disaster Response:** During natural disasters, the classifier can identify affected terrain types, aiding in disaster response and recovery efforts.
+   - **Disaster Response:** 
    
-   - **Ecological Research:** Researchers can employ the classifier for ecological studies to analyze terrain diversity and its impact on local ecosystems.
-   
-#### 3. Agriculture and Land Management
 
-   - **Precision Agriculture:** Farmers can make data-driven decisions by assessing soil types and choosing optimal crops for specific terrains.
-   
-   - **Land Development:** Urban planners and land developers can benefit from understanding the terrain for sustainable land use.
-   
-#### 4. Autonomous Vehicles
+These applications demonstrate the broad utility of the proposed application across different domains.
 
-   - **Navigation:** Autonomous vehicles, such as drones and self-driving cars, can use terrain classification for safe and efficient navigation.
-   
-   - **Obstacle Avoidance:** Identifying rough or impassable terrains helps autonomous vehicles avoid obstacles and hazards.
-   
-#### 5. Geographic Information Systems (GIS)
 
-   - **Map Creation:** The classifier contributes to the creation of detailed maps by categorizing terrains accurately.
-   
-   - **Geospatial Analysis:** Geospatial analysts can integrate terrain data for comprehensive geospatial analysis.
-   
-These applications demonstrate the broad utility of the EarthFinesse Military Terrain Classifier in various fields, enhancing decision-making and resource optimization.
-
-## Contributing
-
-We welcome contributions from the community! If you'd like to contribute to this project, please review our [contribution guidelines](CONTRIBUTING.md).
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
