@@ -68,7 +68,7 @@ Implicit properties like roughness and sliperiness are estimated using a statist
 
 <p align="center">
 	<img src="https://github.com/MaitreyaShelare/Spectra-Transformers-SIH-2023/blob/main/assets/texture%201.png">
-	<img src="https://github.com/MaitreyaShelare/Spectra-Transformers-SIH-2023/blob/main/assets/texture%20.png">
+	<img src="https://github.com/MaitreyaShelare/Spectra-Transformers-SIH-2023/blob/main/assets/texture%202.png">
 </p>
 
 Implicit properties like roughness and sliperiness are estimated using a statistical approach (variance-based patch texture analysis). 
