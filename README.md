@@ -67,7 +67,7 @@ The model achieved an exceptional test accuracy of 99%, showcasing its robust pe
 Implicit properties like roughness and sliperiness are estimated using a statistical approach (variance-based patch texture analysis). 
 
 <p align="center">
-	<img src="https://github.com/MaitreyaShelare/Spectra-Transformers-SIH-2023/blob/main/assets/texture%201.png" width="200">
+	<img src="https://github.com/MaitreyaShelare/Spectra-Transformers-SIH-2023/blob/main/assets/texture%201.png" width="1000">
 	<img src="https://github.com/MaitreyaShelare/Spectra-Transformers-SIH-2023/blob/main/assets/texture%202.png" width="200">
 </p>
 
