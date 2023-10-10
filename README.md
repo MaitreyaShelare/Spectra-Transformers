@@ -28,6 +28,8 @@ The SWIN Transformer,which is pretrained on the ImageNet Dataset, is used as the
 
 This windowing scheme enhances computational efficiency by restricting self-attention calculations to non-overlapping local windows. Simultaneously, it facilitates cross-window connections, yielding substantial gains in terms of both speed and memory usage. By adopting this model, we achieve a significant reduction in computational complexity, scaling from the expensive O($n^2$) of a traditional Vision Transformer to a much more manageable O($mn$), for reasonably small window size ($m$).
 
+Official Implementation of the swin transformer can be found [here](https://github.com/microsoft/Swin-Transformer)
+
 <p align="center">
 	<img src="https://github.com/MaitreyaShelare/Spectra-Transformers-SIH-2023/blob/main/assets/SWIN%20Attention.gif">
 </p>
