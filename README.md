@@ -11,6 +11,8 @@ This Repository contatins code built for this project, which was implemented usi
 
 ## Prototype
 
+## Terrain Recognition Task
+
 ### Data
 
 This prototype was trained on an RGB remote sensing dataset having approximately 45 thousand images, with more than 10 thousand images for each terrain class (Grassy, Marshy, Rocky, Sandy). The Dataset can be downloaded from [here](https://www.kaggle.com/datasets/atharv1610/terrain-recognition)
@@ -33,58 +35,23 @@ This windowing scheme enhances computational efficiency by restricting self-atte
 </p>
 
 
-#### Custom Classification Head
-
-All base model layers are frozen to retain pre-trained knowledge.A custom classification head is added to the base model. It includes a global average pooling layer, a dense layer with 1024 units and ReLU activation, and a final dense layer with softmax activation for the number of classes (4 in this case).
-
 #### Compilation and Training
 
-The model is compiled with the Adam optimizer and categorical cross-entropy loss. It is then trained for 10 epochs.
+The model is compiled with the AdamW optimizer and label smoothing cross-entropy loss. It is then trained for 10 epochs.
 
-Here's how the model was trained:
-
-```python
-# Data augmentation and generators
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
-
-train_datagen = ImageDataGenerator(
-    rescale=1./255,
-    shear_range=0.2,
-    zoom_range=0.2,
-    horizontal_flip=True
-)
-
-# ... (similar setup for test and validation generators)
-
-# MobileNetV2 base model
-from tensorflow.keras.applications import MobileNetV2
-
-base_model = MobileNetV2(weights="imagenet", include_top=False, input_shape=(224, 224, 3))
-
-# ... (freeze base_model layers and add custom classification head)
-
-# Compilation and training
-model.compile(optimizer="adam", loss="categorical_crossentropy", metrics=["accuracy"])
-
-history = model.fit(
-    train_generator,
-    steps_per_epoch=train_generator.samples // train_generator.batch_size,
-    validation_data=validation_generator,
-    validation_steps=validation_generator.samples // validation_generator.batch_size,
-    epochs=10
-)
-```
 
 ### Training Results
 
-EarthFinesse achieved remarkable training results, setting a new benchmark in terrain classification:
+#### Accuracy
 
-#### Final Accuracy
-
-The model achieved a stunning final accuracy of over 97.87%, showcasing its robust performance in classifying terrain types. This high accuracy can significantly enhance the effectiveness of military operations.
+The model achieved an exceptional test accuracy of 99%, showcasing its robust performance in classifying terrain types.
 
 #### Confusion Matrix
-![confusion matrix](https://github.com/MaitreyaShelare/Spectra-Transformers-SIH-2023/blob/main/assets/prototype%20confusion%20matrix.png)
+
+<p align="center">
+	<img src="https://github.com/MaitreyaShelare/Spectra-Transformers-SIH-2023/blob/main/assets/prototype%20confusion%20matrix.png">
+</p>
+
 
 
 #### Training History
