@@ -71,7 +71,7 @@ Implicit properties like roughness and sliperiness are estimated using a statist
 	<img src="https://github.com/MaitreyaShelare/Spectra-Transformers-SIH-2023/blob/main/assets/texture%202.png">
 </p>
 
-Implicit properties like roughness and sliperiness are estimated using a statistical approach (variance-based patch texture analysis). 
+The image is divided into patches, and variance of each patch is calculated. Then, based on the roughness factor value, terrain roughness and smoothness is estimated. 
 
 <p align="center">
 	<img src="https://github.com/MaitreyaShelare/Spectra-Transformers-SIH-2023/blob/main/assets/implicit%20properties%20via%20texture%20variance.png">
@@ -82,16 +82,29 @@ Implicit properties like roughness and sliperiness are estimated using a statist
 
 #### 1. Defence
 
-   - **Tactical Planning:** 
+   - **Tactical Planning** 
    
-   - **Vehicle and Equipment Deployment.:** 
+   - **Vehicle and Equipment Deployment** 
    
    
 #### 2. Environmental Monitoring
 
-   - **Conservation Efforts:** 
+   - **Conservation Efforts** 
    
-   - **Disaster Response:** 
-   
+   - **Disaster Response**
+     
+## Proposed Project  
 
-These applications demonstrate the broad utility of the proposed application across different domains.
+This is the architecture of the proposed dual branch swin transformer.
+
+<p align="center">
+	<img src="https://github.com/MaitreyaShelare/Spectra-Transformers-SIH-2023/blob/main/assets/architecture.png">
+</p>
+
+This is the block diagram of the Hyperspectral branch.
+
+<p align="center">
+	<img src="https://github.com/MaitreyaShelare/Spectra-Transformers-SIH-2023/blob/main/assets/HSI%20Branch.png">
+</p>
+
+
