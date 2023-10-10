@@ -21,9 +21,9 @@ The model was trained on a dataset consisting of 45.1k images, with more than 10
 
 The training data is augmented using techniques like shear, zoom, and horizontal flip to increase diversity.
 
-#### MobileNetV2 Base Model
+#### SWIN Transformer Model
 
-https://production-media.paperswithcode.com/methods/Screen_Shot_2020-06-06_at_10.37.14_PM.png
+![Shifted Window Attention](https://github.com/MaitreyaShelare/Spectra-Transformers-SIH-2023/blob/main/assets/SWIN%20Attention.gif)
 
 The MobileNetV2 architecture, pre-trained on ImageNet, is used as the base model for feature extraction. All base model layers are frozen to retain pre-trained knowledge.
 
