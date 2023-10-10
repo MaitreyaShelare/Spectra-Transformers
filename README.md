@@ -49,15 +49,24 @@ The model is compiled with the AdamW optimizer and label smoothing cross-entropy
 
 The model achieved an exceptional test accuracy of 99%, showcasing its robust performance in classifying terrain types.
 
+<p align="center">
+	<img src="https://github.com/MaitreyaShelare/Spectra-Transformers-SIH-2023/blob/main/assets/test%20accuracy.png">
+</p>
+
+
 #### Confusion Matrix
 
 <p align="center">
 	<img src="https://github.com/MaitreyaShelare/Spectra-Transformers-SIH-2023/blob/main/assets/prototype%20confusion%20matrix.png">
 </p>
 
+### Roughness and Sliperiness Estimation
 
+Implicit properties like roughness and sliperiness are estimated using a statistical approach (variance-based patch texture analysis) 
 
-
+<p align="center">
+	<img src="https://github.com/MaitreyaShelare/Spectra-Transformers-SIH-2023/blob/main/assets/test%20accuracy.png">
+</p>
 
 
 ## Applications
