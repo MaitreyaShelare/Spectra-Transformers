@@ -35,9 +35,25 @@ This windowing scheme enhances computational efficiency by restricting self-atte
 </p>
 
 
-#### Compilation and Training
+#### Model Training
 
 The model is compiled with the AdamW optimizer and label smoothing cross-entropy loss. It is then trained for 10 epochs.
+
+#### Training History
+<div align="center">
+| Epoch | Loss     | Accuracy | Validation Loss | Validation Accuracy |
+|-------|----------|----------|-----------------|---------------------|
+| 0     | 0.4909   | 0.9455   | 0.4088          | 0.9854              |
+| 1     | 0.4096   | 0.9871   | 0.3912          | 0.9923              |
+| 2     | 0.3962   | 0.9921   | 0.3815          | 0.9941              |
+| 3     | 0.3904   | 0.9941   | 0.3800          | 0.9950              |
+| 4     | 0.3855   | 0.9960   | 0.3778          | 0.9953              |
+| 5     | 0.3835   | 0.9960   | 0.3746          | 0.9965              |
+| 6     | 0.3813   | 0.9969   | 0.3756          | 0.9963              |
+| 7     | 0.3809   | 0.9970   | 0.3742          | 0.9967              |
+| 8     | 0.3790   | 0.9978   | 0.3711          | 0.9976              |
+| 9     | 0.3769   | 0.9982   | 0.3713          | 0.9972              |
+</div>
 
 
 ### Training Results
@@ -54,20 +70,6 @@ The model achieved an exceptional test accuracy of 99%, showcasing its robust pe
 
 
 
-#### Training History
-
-| Epoch | Loss     | Accuracy | Validation Loss | Validation Accuracy |
-|-------|----------|----------|-----------------|---------------------|
-| 0     | 0.4909   | 0.9455   | 0.4088          | 0.9854              |
-| 1     | 0.4096   | 0.9871   | 0.3912          | 0.9923              |
-| 2     | 0.3962   | 0.9921   | 0.3815          | 0.9941              |
-| 3     | 0.3904   | 0.9941   | 0.3800          | 0.9950              |
-| 4     | 0.3855   | 0.9960   | 0.3778          | 0.9953              |
-| 5     | 0.3835   | 0.9960   | 0.3746          | 0.9965              |
-| 6     | 0.3813   | 0.9969   | 0.3756          | 0.9963              |
-| 7     | 0.3809   | 0.9970   | 0.3742          | 0.9967              |
-| 8     | 0.3790   | 0.9978   | 0.3711          | 0.9976              |
-| 9     | 0.3769   | 0.9982   | 0.3713          | 0.9972              |
 
 
 
