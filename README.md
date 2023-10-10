@@ -86,7 +86,7 @@ EarthFinesse achieved remarkable training results, setting a new benchmark in te
 The model achieved a stunning final accuracy of over 97.87%, showcasing its robust performance in classifying terrain types. This high accuracy can significantly enhance the effectiveness of military operations.
 
 #### Confusion Matrix
-![WhatsApp Image 2023-09-12 at 15 43 47](https://github.com/PiPlusTheta/EarthFinesse/assets/68808227/39b98fd1-ded6-4950-a06a-a76966865250)
+![WhatsApp Image 2023-09-12 at 15 43 47](assets/prototype confusion matrix.png)
 
 
 #### Training History
