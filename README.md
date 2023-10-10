@@ -1,18 +1,10 @@
 # Multimodal Dual-Swin Transformer with Spectral-Spatial Feature Extraction for Terrain Recognition
+	
+This project proposes a dual-branch SWIN transformer-based terrain recognition system with Multimodal Input. A User can input either an RGB or a Hyperspectral image into the application. The proposed model uses two SWIN Transformers, one for an RGB image, and the other for an HSI image. The RGB branch utilizes a spatial (texture) feature extraction method, while the proposed Hyperspectral branch adopts a joint spatial-spectral feature extraction technique and an adaptive spatial-spectral clustering algorithm for feature selection. 
 
+The SWIN Transformer utilizes the attention mechanism to effectively capture short and long-range dependencies in the Image, providing state-of-the-art classification accuracy of 99% in the prototype trained on the RGB dataset. The prototype uses statistical variance-based texture feature analysis to estimate terrain roughness and slipperiness. The proposed HSI branch will not only provide spatial information like roughness and slipperiness but also the spectral signature for each pixel in the scene, providing a high-level environmental perception. 
 
-We propose a dual branch swin transformer architecture for terrain recognition and implicit properties estimation. capable of accepting multi-modal input (RGB and Hyperspectral) which would be capable of accepting RGB and Hyperspectral Images as input. EarthFinesse is a high-accuracy military terrain classifier powered by deep learning. It classifies terrain types such as Grassy, Marshy, Rocky, and Sandy with an accuracy of over 97.87%, setting a new benchmark in this domain. The model uses the MobileNetV2 architecture, optimized for efficient and accurate terrain classification.
-
-## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Model Training](#model-training)
-- [Training Procedure](#training-procedure)
-- [Training Results](#training-results)
-- [Applications](#applications)
-
-
+This project's objective is to offer an effective and robust terrain recognition solution that can accept different types of images, depending on their availability. We aim to establish a compromise between computational complexity for terrain recognition and high-level implicit properties estimation by providing a dual framework, making this project an indispensable tool for remote sensing, environmental monitoring, and defense applications. 
 
 
 ## Model Training
