@@ -11,8 +11,6 @@ This Repository contatins code built for this project, which was implemented usi
 
 ## Prototype
 
-## Terrain Recognition Task
-
 ### Data
 
 This prototype was trained on an RGB remote sensing dataset having approximately 45 thousand images, with more than 10 thousand images for each terrain class (Grassy, Marshy, Rocky, Sandy). The Dataset can be downloaded from [here](https://www.kaggle.com/datasets/atharv1610/terrain-recognition)
@@ -40,7 +38,7 @@ This windowing scheme enhances computational efficiency by restricting self-atte
 The model is compiled with the AdamW optimizer and label smoothing cross-entropy loss. It is then trained for 10 epochs.
 
 #### Training History
-<div align="center">
+
 | Epoch | Loss     | Accuracy | Validation Loss | Validation Accuracy |
 |-------|----------|----------|-----------------|---------------------|
 | 0     | 0.4909   | 0.9455   | 0.4088          | 0.9854              |
@@ -53,7 +51,6 @@ The model is compiled with the AdamW optimizer and label smoothing cross-entropy
 | 7     | 0.3809   | 0.9970   | 0.3742          | 0.9967              |
 | 8     | 0.3790   | 0.9978   | 0.3711          | 0.9976              |
 | 9     | 0.3769   | 0.9982   | 0.3713          | 0.9972              |
-</div>
 
 
 ### Training Results
