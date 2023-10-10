@@ -89,9 +89,9 @@ The image is divided into patches, and variance of each patch is calculated. The
    
 #### 2. Environmental Monitoring
 
-   - **Conservation Efforts** 
+   - **Conservation** 
    
-   - **Disaster Response**
+   - **Disaster Management**
      
 ## Proposed Project  
 
