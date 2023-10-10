@@ -7,11 +7,12 @@ The SWIN Transformer utilizes the attention mechanism to effectively capture sho
 This project's objective is to offer an effective and robust terrain recognition solution that can accept different types of images, depending on their availability. We aim to establish a compromise between computational complexity for terrain recognition and high-level implicit properties estimation by providing a dual framework, making this project an indispensable tool for remote sensing, environmental monitoring, and defense applications. 
 
 
-## Model Training
+## Prototype
 
 ### Dataset
 
-The model was trained on a dataset consisting of 45.1k images, with more than 10k images for each terrain class (Grassy, Marshy, Rocky, Sandy).
+This prototype was trained on a dataset consisting of 45.1k images, with more than 10k images for each terrain class (Grassy, Marshy, Rocky, Sandy). The Dataset can be downloaded from
+[here](https://www.kaggle.com/datasets/atharv1610/terrain-recognition)
 
 ![WhatsApp Image 2023-09-13 at 13 18 11](https://github.com/PiPlusTheta/EarthFinesse/assets/68808227/65ab6221-7657-4dca-99e2-87ed4eb9036f)
 
