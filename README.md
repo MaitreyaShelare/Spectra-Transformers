@@ -31,7 +31,7 @@ This windowing scheme enhances computational efficiency by restricting self-atte
 Official Implementation of the swin transformer can be found [here](https://github.com/microsoft/Swin-Transformer)
 
 <p align="center">
-	<img src="https://github.com/MaitreyaShelare/Spectra-Transformers-SIH-2023/blob/main/assets/SWIN%20Attention.gif" width="800">
+	<img src="https://github.com/MaitreyaShelare/Spectra-Transformers-SIH-2023/blob/main/assets/SWIN%20Attention.gif" width="500">
 </p>
 
 
