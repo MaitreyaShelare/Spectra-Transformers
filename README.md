@@ -6,7 +6,7 @@ The SWIN Transformer utilizes the attention mechanism to effectively capture sho
 
 This project's objective is to offer an effective and robust terrain recognition solution that can accept different types of images, depending on their availability. We aim to establish a compromise between computational complexity for terrain recognition and high-level implicit properties estimation by providing a dual framework, making this project an indispensable tool for remote sensing, environmental monitoring, and defense applications. 
 
-This Repository contatins code built for this project, which was implemented using PyTorch Deep Learning framework.
+This Repository contatins code built for this project, which is implemented using PyTorch framework.
 
 
 ## Prototype
