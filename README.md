@@ -1,7 +1,7 @@
 # Multimodal Dual-Swin Transformer with Spectral-Spatial Feature Extraction for Terrain Recognition
 
 
-We propose a dual branch swin transformer based approach, which would be capable of accepting RGB and Hyperspectral Images as input. EarthFinesse is a high-accuracy military terrain classifier powered by deep learning. It classifies terrain types such as Grassy, Marshy, Rocky, and Sandy with an accuracy of over 97.87%, setting a new benchmark in this domain. The model uses the MobileNetV2 architecture, optimized for efficient and accurate terrain classification.
+We propose a dual branch swin transformer architecture for terrain recognition and implicit properties estimation. capable of accepting multi-modal input (RGB and Hyperspectral) which would be capable of accepting RGB and Hyperspectral Images as input. EarthFinesse is a high-accuracy military terrain classifier powered by deep learning. It classifies terrain types such as Grassy, Marshy, Rocky, and Sandy with an accuracy of over 97.87%, setting a new benchmark in this domain. The model uses the MobileNetV2 architecture, optimized for efficient and accurate terrain classification.
 
 ## Table of Contents
 
@@ -11,8 +11,7 @@ We propose a dual branch swin transformer based approach, which would be capable
 - [Training Procedure](#training-procedure)
 - [Training Results](#training-results)
 - [Applications](#applications)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 
 
@@ -94,7 +93,7 @@ The model achieved a stunning final accuracy of over 97.87%, showcasing its robu
 
 | Epoch | Loss     | Accuracy | Validation Loss | Validation Accuracy |
 |-------|----------|----------|-----------------|---------------------|
-| 0     | 0.274514 | 0.897999 | 0.180294        | 0.934242            |
+| 0     | 0.4909   | 0.9455   | 0.4088          | 0.9854              |
 | 1     | 0.151308 | 0.945084 | 0.208954        | 0.924763            |
 | 2     | 0.121970 | 0.956086 | 0.170471        | 0.941647            |
 | 3     | 0.101868 | 0.962776 | 0.154959        | 0.947571            |
@@ -105,10 +104,7 @@ The model achieved a stunning final accuracy of over 97.87%, showcasing its robu
 | 8     | 0.064471 | 0.977139 | 0.129367        | 0.958235            |
 | 9     | 0.059202 | 0.978661 | 0.114494        | 0.966380            |
 
-![WhatsApp Image 2023-09-13 at 13 03 33](https://github.com/PiPlusTheta/EarthFinesse/assets/68808227/d8d1f4fc-a2e2-4efd-84c4-1b03dc562955)
 
-
-These training metrics illustrate the model's progression over the training epochs, with both training and validation accuracy steadily increasing.
 
 ## Applications
 
